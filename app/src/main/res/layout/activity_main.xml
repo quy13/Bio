@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bio"
+            type="com.example.bio.data.Bio2" />
+        <!--            sử dụng databinding-->
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/generalstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4A7ADA"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/nah"
+            android:padding="@dimen/text_padding"
+            app:srcCompat="@drawable/icons8_user_50" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{bio.name2}"
+            android:textColor="#1A237E" />
+        <!--            sử dụng databinding-->
+
+        <EditText
+            android:id="@+id/Et_hobby"
+            style="@style/generalstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|center_vertical"
+            android:hint="@string/hobby_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="@dimen/text_padding"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/showText"
+            style="@style/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{bio.hobbies2}"
+            android:visibility="invisible" />
+<!--            sử dụng databinding-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/scrollingView"
+                style="@style/generalstyle"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/script"
+                android:textColor="#1A237E" />
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="test1">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="generalstyle" parent="test1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/laypout_margin</item>
+        <item name="android:lineSpacingMultiplier">0.95</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+</resources>
