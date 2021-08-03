@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        bio.setName2("Hua Duy Phu");
+        bio.setName2("Mary Jones");
 
         binding.setBio(bio);
         binding.button.setOnClickListener(this::showhobbies);
