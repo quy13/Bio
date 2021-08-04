@@ -1,5 +1,5 @@
 # Bio
-tạo app hiển thị một Bio và hiển thị sở thích khi nhập vào editText rồi hiển thị ra màn hình bio .
+tạo app hiển thị một Bio hay (biography/tiểu sử) và hiển thị sở thích khi nhập vào editText rồi hiển thị ra màn hình .
 
 ở showText và Et_hobby s/d databinding sẽ hiển thị tên khi mở app và sở thích sẽ lên khi nhấn nút Done.
 
