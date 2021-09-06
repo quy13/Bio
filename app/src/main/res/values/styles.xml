@@ -7,7 +7,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="generalstyle" parent="test1">
+    <style name="general_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginRight">@dimen/laypout_margin</item>

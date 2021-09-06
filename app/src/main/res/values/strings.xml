@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">Bio</string>
-    <string name="Title">El-Capracio</string>
-    <string name="script">Mary Jones is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.
-    Mary Jones is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.
-    </string>
+    <string name="Title">Mary Jones</string>
+    <string name="my_bio">Mary Jones is an Administrative Assistant with eight years of experience \n\n
+        working alongside the executive team of a Fortune 500 company.
+        \n\n <u><i> Mary specializes in administrative technology </i></u>
+        \n\n and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps.
+        \n\n Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters.
+        \n\n In her free time, Mary likes to hike, crochet and play video games with her grandson.</string>
     <string name="hobby_hint">Enter your hobby</string>
     <string name="done">Done</string>
     <string name="nah">nah</string>
+    <string name="image_description">a person\'s silhouette</string>
+    <string name="auto_fill_hints">classical guitar</string>
 </resources>

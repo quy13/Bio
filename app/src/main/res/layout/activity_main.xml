@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -7,51 +8,48 @@
         <variable
             name="bio"
             type="com.example.bio.data.Bio2" />
-        <!--            sử dụng databinding-->
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        style="@style/generalstyle"
+        style="@style/general_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#4A7ADA"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-
         <ImageView
             android:id="@+id/image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:contentDescription="@string/nah"
             android:padding="@dimen/text_padding"
-            app:srcCompat="@drawable/icons8_user_50" />
+            app:srcCompat="@drawable/ic_baseline_person" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/text_view"
             style="@style/test1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@{bio.name2}"
-            android:textColor="#1A237E" />
-        <!--            sử dụng databinding-->
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/Et_hobby"
-            style="@style/generalstyle"
+            android:id="@+id/hobby_et"
+            style="@style/general_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:autofillHints="@string/auto_fill_hints"
             android:background="@android:color/transparent"
-            android:ems="10"
             android:gravity="center|center_vertical"
             android:hint="@string/hobby_hint"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:padding="@dimen/text_padding"
-            android:autofillHints="" />
+            android:padding="@dimen/text_padding" />
 
         <Button
             android:id="@+id/button"
@@ -62,16 +60,16 @@
             android:text="@string/done" />
 
         <TextView
-            android:id="@+id/showText"
+            android:id="@+id/show_hobbies"
             style="@style/test1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="@{bio.hobbies2}"
-            android:visibility="invisible" />
-<!--            sử dụng databinding-->
-
+            android:visibility="invisible"
+           />
+<!--        android:onClick="addHobbies"-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -79,10 +77,11 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/scrollingView"
-                style="@style/generalstyle"
+                android:id="@+id/scrolling_text_view"
+                style="@style/general_style"
                 android:fontFamily="@font/roboto_slab"
-                android:text="@string/script"
+                android:lineSpacingMultiplier="1.9"
+                android:text="@string/my_bio"
                 android:textColor="#1A237E" />
         </ScrollView>
     </androidx.appcompat.widget.LinearLayoutCompat>
